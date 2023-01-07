@@ -1,0 +1,7 @@
+main: me.Heklo.BetterKillMoney.Main
+name: BetterKillMoney
+version: 1.0
+author: Heklo
+
+commands:
+  bkm:

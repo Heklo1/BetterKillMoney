@@ -1,0 +1,35 @@
+# Made by Heklo
+
+# Minimum Reduction Factor - The lowest fraction of a reward people can get.
+# If set to 0.2, players in max gear will get 1/5 of the normal reward.
+# Only used if gear-based rewards are enabled.
+MRF: 0.2
+
+# Minimum Kit Points - The point value of the lowest (default) kit. 0.48 is unenchanted chainmail.
+min-kit-points: 0.48
+
+# Maximum Kit Points - The point value of the highest kit. 1.0 is full diamond protection 4.
+max-kit-points: 1.0
+
+# Separate for killing players or mobs.
+Rewards:
+  PLAYER:
+    Money:
+      gear-based: true
+      minimum: 10.00
+      maximum: 20.00
+    Commands:
+      1:
+        cmd: "say you killed something!"
+        chance: 1.0
+        gear-based: true
+      2:
+        cmd: "say 50% this time"
+        chance: 0.5
+        gear-based: true
+  OTHER:
+    Money:
+      gear-based: true
+      minimum: 1.00
+      maximum: 3.00
+    
